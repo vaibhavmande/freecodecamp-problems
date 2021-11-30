@@ -1,0 +1,14 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container button,
+a {
+  padding: 0.8rem 1rem;
+  border-radius: 0.2rem;
+  background-color: rgb(67, 47, 50);
+  color: white;
+  border: none;
+  margin-inline: 0.2rem;
+}
