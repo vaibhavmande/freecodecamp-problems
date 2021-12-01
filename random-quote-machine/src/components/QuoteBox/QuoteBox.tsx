@@ -1,5 +1,7 @@
 import QuoteBoxFooter from "../QuoteBoxFooter/QuoteBoxFooter";
 import { QuoteBoxType } from "./QuoteBox.types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { createTwitterIntent, createTumblrIntent } from "../../lib/intent";
 import "./QuoteBox.css";
 
@@ -9,8 +11,13 @@ const QuoteBox = ({ quote, setRandomQuote }: QuoteBoxType): JSX.Element => {
 
   return (
     <div id="quote-box">
-      <div id="text">{quote.quote}</div>
-      <p id="author">- {quote.author}</p>
+      <div id="text">
+        <FontAwesomeIcon icon={faQuoteLeft} aria-hidden="true" />
+        <p>{quote.quote}</p>
+      </div>
+      <p id="author">
+        <span aria-hidden="true">-</span> {quote.author}
+      </p>
       <QuoteBoxFooter
         setRandomQuote={setRandomQuote}
         intent={{ twitter: twitterShare, tumblr: tumblrShare }}

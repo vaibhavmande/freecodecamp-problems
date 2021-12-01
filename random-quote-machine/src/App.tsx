@@ -1,7 +1,7 @@
 import React from "react";
 import QuoteBox from "./components/QuoteBox/QuoteBox";
 import { QuoteType } from "./App.types";
-import { setRandomColorToElement } from "./lib/randomColor";
+import { setRandomColorToElement, getRandomBetween } from "./lib/random";
 import "./App.css";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   const [quote, setQuote] = React.useState<QuoteType>(initialState);
 
   const getRandomQuote = (): QuoteType => {
-    const random = Math.round(Math.random() * quotesLength);
+    const random = Math.round(Math.random() * getRandomBetween(quotesLength));
     return quotes[random] ?? initialState;
   };
 
@@ -39,7 +39,7 @@ function App() {
 
   // everytime quote changes change background color
   React.useEffect(() => {
-    if (quote.quote == "") return;
+    if (quote.quote === "") return;
     setRandomColorToElement("app");
   }, [quote]);
 

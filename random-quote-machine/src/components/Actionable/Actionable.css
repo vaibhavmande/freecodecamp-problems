@@ -10,4 +10,10 @@
 
 button.actionable {
   padding-top: 1rem;
+  margin-right: 0;
+  font-size: 1rem;
+}
+
+#tweet-quote {
+  margin-left: 0;
 }

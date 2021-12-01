@@ -1,6 +1,5 @@
 import Actionable from "../Actionable/Actionable";
 import { faTwitter, faTumblr } from "@fortawesome/free-brands-svg-icons";
-import { QuoteType } from "../../App.types";
 import "./QuoteBoxFooter.css";
 
 interface Intent {

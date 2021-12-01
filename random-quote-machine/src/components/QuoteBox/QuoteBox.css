@@ -1,4 +1,5 @@
 #quote-box {
+  --animation-duration: 1s;
   padding: 2rem;
   margin-inline: 2rem;
   border-radius: 0.25rem;
@@ -10,9 +11,33 @@
 #text {
   font-size: 1.5rem;
   word-spacing: 0rem;
+  animation: fadeIn linear var(--animation-duration, 2s);
+}
+
+#text svg {
+  font-size: 2.5rem;
+}
+
+#text p {
+  font-size: 2rem;
+  word-spacing: 5px;
+  line-height: 2rem;
+  display: inline;
+  padding-left: 1rem;
 }
 
 #author {
-  margin: 2rem 0;
+  font-size: 1.25rem;
+  margin: 1.4rem 0;
   text-align: right;
+  animation: fadeIn linear var(--animation-duration, 2s);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
