@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/freecodecamp-problems/builds/random-quote-machine/static/css/main.c8566b72.chunk.css",
+    "main.js": "/freecodecamp-problems/builds/random-quote-machine/static/js/main.ee357575.chunk.js",
+    "main.js.map": "/freecodecamp-problems/builds/random-quote-machine/static/js/main.ee357575.chunk.js.map",
+    "runtime-main.js": "/freecodecamp-problems/builds/random-quote-machine/static/js/runtime-main.c728faa2.js",
+    "runtime-main.js.map": "/freecodecamp-problems/builds/random-quote-machine/static/js/runtime-main.c728faa2.js.map",
+    "static/js/2.e7a674cf.chunk.js": "/freecodecamp-problems/builds/random-quote-machine/static/js/2.e7a674cf.chunk.js",
+    "static/js/2.e7a674cf.chunk.js.map": "/freecodecamp-problems/builds/random-quote-machine/static/js/2.e7a674cf.chunk.js.map",
+    "static/js/3.de54e012.chunk.js": "/freecodecamp-problems/builds/random-quote-machine/static/js/3.de54e012.chunk.js",
+    "static/js/3.de54e012.chunk.js.map": "/freecodecamp-problems/builds/random-quote-machine/static/js/3.de54e012.chunk.js.map",
+    "index.html": "/freecodecamp-problems/builds/random-quote-machine/index.html",
+    "static/css/main.c8566b72.chunk.css.map": "/freecodecamp-problems/builds/random-quote-machine/static/css/main.c8566b72.chunk.css.map",
+    "static/js/2.e7a674cf.chunk.js.LICENSE.txt": "/freecodecamp-problems/builds/random-quote-machine/static/js/2.e7a674cf.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/freecodecamp-problems/builds/random-quote-machine/static/media/Roboto-Thin.1711b41f.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c728faa2.js",
+    "static/js/2.e7a674cf.chunk.js",
+    "static/css/main.c8566b72.chunk.css",
+    "static/js/main.ee357575.chunk.js"
+  ]
+}
