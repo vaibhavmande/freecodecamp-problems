@@ -25,6 +25,8 @@ run `npm run start` which will run the app at _localhost:3000_
 
 To run tests run `npm run test`
 
+To run tests from **freecodecamp**. Select "Random Quote Machine" from the dropdown and click "Run Tests" button to run tests.
+
 ## Contributing
 
 Pull requests are welcome. Please make sure to update tests as appropriate.
