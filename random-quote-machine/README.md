@@ -6,7 +6,8 @@ The link to this challenges is [here](https://www.freecodecamp.org/learn/front-e
 
 ## Demo
 
-Link to be updated.
+The app is hosted at GitHub Pages
+Please visit [this link](https://vaibhavmande.com/freecodecamp-problems/builds/random-quote-machine/) for the demo.
 
 ## Objective
 
