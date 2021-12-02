@@ -22,12 +22,18 @@ function App() {
 
   React.useEffect(() => {
     fetch(API)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Unable to fetch quotes");
+        }
+        return response;
+      })
       .then((response) => response.json())
       .then((quotes) => {
         setQuotes(quotes.quotes);
         setQuote(quotes.quotes[0]);
       })
-      .catch((error) => console.error("Unable to fetch quotes", error));
+      .catch(() => console.error("Unable to fetch quotes"));
   }, []);
 
   const quotesLength = React.useMemo(() => quotes.length, [quotes]);

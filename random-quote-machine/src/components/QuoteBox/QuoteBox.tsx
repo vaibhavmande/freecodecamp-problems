@@ -13,7 +13,7 @@ const QuoteBox = ({ quote, setRandomQuote }: QuoteBoxType): JSX.Element => {
     <div id="quote-box">
       <div id="text">
         <FontAwesomeIcon icon={faQuoteLeft} aria-hidden="true" />
-        <p>{quote.quote}</p>
+        <p data-testid="quote">{quote.quote}</p>
       </div>
       <p id="author">
         <span aria-hidden="true">-</span> {quote.author}

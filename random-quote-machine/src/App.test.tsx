@@ -1,9 +1,12 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen, waitFor } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("App with Quote", async () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const quoteElement = screen.getByTestId("quote");
+  await waitFor(() => expect(quoteElement).not.toBeEmptyDOMElement());
+
+  expect(quoteElement).not.toBeEmptyDOMElement();
 });
